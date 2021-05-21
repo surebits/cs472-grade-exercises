@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retrieve Grade</title>
+</head>
+
+<body>
+    <h1>Retrieve your grade</h1>
+
+    <form method="POST" action="http://mumstudents.org/params.php">
+        <p>
+            <label for="name">Student Name: </label>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <p>
+            <label for="id">Student ID:</label>
+            <input type="text" id="id" name="id">
+        </p>
+
+        <p>
+            <label for="courses">Select Course:</label>
+            <select id="courses" name="courses">
+                <option value="bdt">Big Data Technology(BDT)</option>
+                <option value="mpp">Modern Programming Practice (MPP)</option>
+                <option value="wap">Web Application Programming</option>
+            </select>
+        </p>
+        <p>
+            Student Entry:
+            <input type="radio" name="entry" id="feb-2021" value="February 2021">
+            <label for="feb-2021">February 2021</label>
+
+        </p>
+
+        <p>
+            <input type="checkbox" id="acknowlegement"
+                value="I acknowlege that the information provided are mine and accurate to the best of my knowledge.">
+            <label for="acknowlegement">I acknowledge that the information provided are mine and accurate to the best of
+                my
+                knowledge.</label>
+        </p>
+        <button> Get Grade!</button>
+    </form>
+</body>
+
+</html>
